@@ -1,6 +1,6 @@
 {
-  "name": "enjoi",
-  "version": "9.0.1",
+  "name": "@embroker/enjoi",
+  "version": "9.0.1-patch.0",
   "license": "Apache 2.0",
   "description": "Converts json-schema to Joi schema.",
   "main": "./index.js",
@@ -9,9 +9,12 @@
     "cover": "nyc --reporter=lcov --lines 100 npm test && nyc report",
     "lint": "eslint index.js lib/resolver.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tlivings/enjoi.git"
+    "url": "git://github.com/embroker/enjoi.git"
   },
   "engines": {
     "node": ">=8"
